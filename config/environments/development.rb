@@ -1,4 +1,5 @@
 Rails.application.configure do
+config.action_mailer.default_url_options = { host: 'node22.codenvy.io:35417' }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
