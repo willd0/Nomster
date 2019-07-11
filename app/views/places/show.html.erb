@@ -127,7 +127,15 @@
 
 <div class="col-12 col-sm-6">     
 <% @place.photos.each do |photo| %>
-  <%= image_tag photo.picture.url %>
-  <%= photo.caption %>
+  <div class="row">
+    <div class="col-12">
+    <%= image_tag photo.picture.url %>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-12">
+    <%= photo.caption %>
+  </div>
+  </div>
 <% end %>
 </div>

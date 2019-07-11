@@ -12,10 +12,16 @@
     <% end %>
     
 <% if place.photos.present? %>
+    <div class="row">
     <div class="col-12">     
         <%= image_tag place.photos.last.picture.url %>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
         <%= place.photos.last.caption %>
-   </div>
+    </div>
+    </div>
 <% end %>
 
 <% if place.comments.present? %>
