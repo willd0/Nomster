@@ -129,11 +129,11 @@
 <% @place.photos.each do |photo| %>
   <div class="row">
     <div class="col-12">
-    <%= image_tag photo.picture.url %>
+    <%= image_tag photo.picture.url, :class => "style_picture" %>
     </div>
   </div>
   <div class="row">
-  <div class="col-12">
+  <div class="col-12 caption">
     <%= photo.caption %>
   </div>
   </div>

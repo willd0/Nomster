@@ -13,7 +13,7 @@
     <div class="carousel-item">
       <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
     <div class="carousel-caption d-none d-md-block">
-      <h3>Looking for hotdogs?</h3>
+      <h3>Looking for tacos?</h3>
     </div>
     </div>
   </div>
@@ -43,11 +43,11 @@
 <% if place.photos.present? %>
     <div class="row">
     <div class="col-12">     
-        <%= image_tag place.photos.last.picture.url %>
+        <%= image_tag place.photos.last.picture.url, :class => "style_picture" %>
     </div>
     </div>
     <div class="row">
-    <div class="col-12">
+    <div class="col-12 caption">
         <%= place.photos.last.caption %>
     </div>
     </div>
